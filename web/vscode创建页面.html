@@ -1,14 +1,53 @@
 <!DOCTYPE html><!--文档类型声明标签，必须写在第一行-->
 
-<html lang="en">
+<html lang="zh-cn"> <!--定义网站识别为中文[zh-cn]还是英文[en]，方便翻译插件等自动运行-->
 <head>
     <!-- 运行效果，快捷键 alt + B -->>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> <!--编译器字符码，不写编译器会乱码-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>全球最大同行😂交友门户</title>
 </head>
 <body>
+
+    <h1 id="top">标题标签：h1-h6</h1>
+    <h6>直接刷新就能显示</h6>
+    <!--回车和空格没有用处，分段要用段落标签-->
     
+    <p>换行，空一行，另起一段</p>
+    换行，不空一行<br />
+    <p>第一条为了坚持党的领导，<br />加强党的建设，发扬党内民主，保障党员权利，增强党的生机活力，根据《中国共产党章程》，制定本条例。</p>
+    <p>第二条党员权利保障坚持以马克思列宁主义、毛泽东思想、邓小平理论、“三个代表”重要思想、科学发展观、习近平新时代中国特色社会主义思想为指导，增强“四个意识”、坚定“四个自信”、做到“两个维护”，不忘初心、牢记使命，坚定不移全面从严治党，推动各级党组织落实和保障党员权利，激发广大党员的积极性、主动性、创造性，增强党的创造力、凝聚力、战斗力，永葆党的先进性和纯洁性，为全面建设社会主义现代化国家、实现中华民族伟大复兴作出贡献。</p>
+
+    <strong>加粗</strong>,<b>b</b> <br />
+    <em>倾斜</em>,<i>i</i> <br />
+    <del>删除线</del>,<s>s</s> <br />
+    <ins>下划线</ins>,<u>u</u>
+
+    <div>div是一个大盒子，独占一行
+        <img src="images/pig.jpg" alt="不对劲,alt属性是-图片显示不出时的提示"/>
+    </div>1234
+    <span>span是小盒子，多个一行，不独占一行 </span> <span>第二个span</span><br/>
+    <img src="login_page.jpg" alt="替换文本" title="图像说明文字" width="400"><!--高度和宽度一般设置一个，会自动等比列缩放-->
+
+    <h1>超链接</h1>
+    <h2>1.外部链接</h2>
+    <a href="https://www.baidu.com/" target="_blank">baidu</a>
+
+    <h2>2.内部链接</h2>
+    <a href="01-HTML.html" target="_blank">测试</a>
+
+    <h2>3.空链接</h2>
+    <a href="#">未定义链接地址</a>
+
+    <h2>4.下载链接:链接地址是文件的地址</h2>
+    <a href="login_page.zip">下载文件</a>
+    
+    <h2>5.任何元素都可作为链接的载体：文字，图片，视频</h2>
+    <a href="https://www.baidu.com/"><img src="images/pig.jpg"></a>
+
+    <h2>4.锚点链接:链接到页面中的做好标记的位置</h2>
+    <a href="#top">返回顶部</a>
+    <!-- 注释的快捷键:ctl + / -->
 </body>
 </html>
