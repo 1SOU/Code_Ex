@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day6-3</title>
+</head>
+<body>
+    <h2>表格</h2>
+    <!--tr标签内的是字符，所以空格有用-->
+    <table><td><th>姓名  </th> <th>性别</th> </td></table>
+    <table><td><tr>小C  </tr> <tr>女</tr> </td></table>
+
+    <h4>合并单元格</h4>
+    <table  border="1" cellspacing="0" width=800 height=100>
+        <tr>
+            <td></td>
+            <td colspan="2"></td>
+            <!--合并后 ，删掉多余的单元格-->
+        </tr>
+        <tr>
+            <td rowspan="2"></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <!--合并后 ，删掉多余的单元格-->
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <h4>无序列表</h4>
+    <ul>
+        <li>shang</li>
+        <li>an </li>
+        <li></li>
+    </ul>
+    <h4>自定义列表</h4>
+    <dl>
+        <dt>关注我们</dt>
+        <dd>微博</dd>
+        <dd>微信</dd>
+    </dl>
+
+
+    <h2>表单</h2>
+    <form action="接受数据的服务器地址">
+        用户名：<input type="text" name="username" value="输入用户名" maxlength="6"> <br/> <!--value值是传给后台的数据,maxlength 最大字符数-->
+        密码：<input type="password" name="pwd"> <br/> 
+        <!-- 单选按钮 ,多个单选按钮一样的name值，才能实现单选
+            按钮的value，就是选中候传给后台的值
+            lable 可以关联到id相同的 选择按钮或文本等等  -->
+        性别：<label for="man">男</label> <input type="radio" name="sex" value="man" checked="checked" id="man"> 女<input type="radio" name="sex" value="woman"> <br/>
+        <!-- 复选框 -->
+        <!-- 单选按钮和复选框，可以设置默认勾选，checked -->
+        爱好：吃饭 <input type="checkbox" name="hoby" value="eat"> 睡觉 <input type="checkbox" name="hoby" value="sleep"> <br/>
+        <input type="submit" value="提交测试"> <br>
+        <input type="reset" value="重新填写"> <br>
+        <input type="button" value="Button"> <br>
+        上传头像：<input type="file"> <br>
+
+        籍贯：
+        <select>
+            <option >郑州</option>
+            <option >南阳</option>
+            <option selected="selected">洛阳</option>
+        </select>
+    </form>
+
+</body>
+</html>
