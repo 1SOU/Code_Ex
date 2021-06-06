@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 改样式 */
+        /* 针对某一类的所有标签改变样式 */
+        h1 {
+            color: brown;
+        }
+        /* 定义样式类,类名自定义，标签可选什么样式 */
+        .red {
+            /* color: crimson; */
+            /* 可以鼠标放在颜色框上自己选颜色 */
+            color: #f00b0b; 
+            /* font-size: x-small; */
+        }
+        .font35 {
+            font-size: 50px;
+        }
+        p { 
+            /* 
+            font-style: italic;
+            font-weight: 700;  不带px
+            font-size: 30px;   带px
+            font-family: 'Microsoft yahei'; */
+            /* 可以复合属性，节约代码 */
+            font: 30px 'Microsoft yahei'; 
+            /* 至少 font-size: font-family:这两个属性，否则语句不执行 ，，，而且要按顺序写属性[font-style: font-weight: font-size: font-family: ]*/
+        }
+        h1 {
+            text-align: center;
+        }
+        a {
+            text-decoration: none;
+        }
+        #suojin {
+            /* 段首缩进2个字 */
+            text-indent: 2em;
+        }
+
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>测试样式，选择器</h1>
+    <ul>
+        <li class="red font35">11</li> 
+        <!-- 可以选择多个样式类，注意加空格 -->
+        <li>22</li>
+        <li>33</li>
+    </ul>
+    <p>复合属性</p>
+    
+    <a href="#">去掉链接的下划线</a>
+
+    <p id="suojin">根据《2021年新安县引进高层次人才公告》规定程序，网上报名、资格初审、面试资格现场确认工作均已结束，现将面试有关事宜通知如下：2021年5月30日(本周日)，考生须在5月30日早上7:30前到达新安县新城实验学校，待测量体温、出示健康码、检查相关证件后进入候考室候考。</p>
+
+    <h2>测试外部样式表</h2>
+</body>
+</html>
