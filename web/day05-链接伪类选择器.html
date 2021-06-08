@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>链接伪类选择器</title>
+
+    <style>
+        a {
+            text-decoration: none;
+            width: 200px;
+            height: 80px;
+            display: block;
+            /* 转化为block ，可以自己设置 宽高 */
+            background-color: plum;
+        }
+
+        a:link {
+            color: #0a0b4b;
+        }
+
+        a:visited {
+            color: #0ce74e;
+        }
+
+        a:hover {
+            color: mediumvioletred;
+
+        }
+
+        a:active {
+            color: olivedrab;
+        }
+
+
+        input:focus {
+            background-color: orangered;
+            color: papayawhip;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <a href="https://www.baidu.com/" target="_blank">paidu</a>
+    <a href="#">alimama</a>
+    <a href="#">tenxent</a>
+    <a href="https://www.daddasdasad.com/">tenxenfaft</a>
+    <!-- 测试未访问的状态，不能用常见的网址，因为电脑有记录，打开就是已访问的状态 -->
+    <p>focus选择器，选中的标签更改样式</p>
+    <input type="text">
+    <input type="text">
+    <input type="text">
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .one {
+            line-height: 26px;
+            text-indent: 2em;
+            text-decoration: none;
+        }
+
+        /* 后代选择器，后代中所有的同名标签 (a) 都会被选中 */
+        .nav a {
+            color: lawngreen;
+        }
+
+        /* 亲儿子选择器，只选择直接子标签，后代不管 */
+        .hot>a {
+            color: lightseagreen;
+        }
+
+        span,
+        .bing li {
+            color: magenta;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="color: indianred;">Emmet语法</h2>
+    <h3>快速生成HTML语法</h3>
+
+    <h4>多个相同的标签，在标签后面加上* ：</h4>
+    <h4>自增符号$ 按顺序生成</h4>
+    <h4>eg: div{$}*3</h4>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+
+
+    <p>父级关系用 > eg: ul>li</p>
+    <p>兄弟级关系用 +</p>
+
+    <h4>.class名 可以直接生成一个选择了class的div。相当于</h4>
+    <div class="nads"></div>
+    <p>默认是div,生成其它标签 标签名.class名 </p><!-- p.class -->
+    <p class="dsadas"></p>
+    <!-- .demo$*3 -->
+    <div class="demo1"></div>
+    <div class="demo2"></div>
+    <div class="demo3"></div>
+
+
+    <div class="hot">
+        <p>后代选择器，只改变链接的颜色</p>
+        <a href="#">自己一个</a>
+        <ul>
+            <li>
+                <a href="#">换个颜色11</a>
+                <a href="#">换个颜色22</a>
+            </li>
+        </ul>
+    </div>
+
+    <p>并集选择器</p>
+    <span>22</span>
+    <ul class="bing">
+        <li>31</li>
+        <li>32</li>
+    </ul>
+
+
+
+
+
+
+</body>
+
+</html>
