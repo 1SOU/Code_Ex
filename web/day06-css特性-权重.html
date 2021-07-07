@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        /* 复合选择器会有全中累加问题 */
+        li {
+            /* 权重：0,0,0,1 */
+            color: brown;
+        }
+
+        /* 元素【标签】选择器，权重 0,0,0,1 */
+        ul li {
+            /* 权重：0,0,0,1 + 0,0,0,1 = 0,0,0,2   */
+            color: chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <ul>
+        <li>123</li>
+
+    </ul>
+
+</body>
+
+</html>
