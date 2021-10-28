@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 
 <head>
     <meta charset="UTF-8">
@@ -13,12 +13,17 @@
         li {
             /* 权重：0,0,0,1 */
             color: brown;
+            color: rgb(255, 0, 0)
         }
 
         /* 元素【标签】选择器，权重 0,0,0,1 */
         ul li {
             /* 权重：0,0,0,1 + 0,0,0,1 = 0,0,0,2   */
             color: chartreuse;
+        }
+
+        .nav {
+            color: aqua;
         }
     </style>
 </head>
@@ -28,7 +33,14 @@
 
     <ul>
         <li>123</li>
+    </ul>
 
+    <ul class="nav">
+        <!-- 本应该是 nav 类的样式 -->
+        大萨达
+        !--
+        <li>类选择器权重 高于 标签选择器 </li>
+        <li>但是 继承来的 【类选择器】 ，权重仍是最低的0000 </li>
     </ul>
 
 </body>
