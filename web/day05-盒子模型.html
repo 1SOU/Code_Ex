@@ -7,22 +7,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hezi</title>
     <style>
-        div {
+        .div1 {
 
             width: 200px;
             height: 200px;
             /* 盒子的大小，并不控制边框 */
-            /* 不设置粗细，有默认值 */
-            border: blue solid;
+            /* 不设置粗细，有默认值   2.5??*/
+            border: blue solid 2.5px;
             /* 每次设置border 都要设置样式，否则默认没边框。就不显示 */
             border-top: red solid;
+
+            /* 修改内边距，不会影响 content , border  的大小，但是会改变真个盒子大小
+            内边距变大了，盒子也就大了  */
+
+            /* 上，左右，下 */
+            padding: 10px 30px 0px;
+            /* 上，右，下，左 */
+            padding: 0px 10px 20px 30px;
+        }
+
+        .div2 {
+            width: 185px;
+            height: 180px;
+            border: aqua solid 10px;
+        }
+
+        .nav {
+            height: 41px;
+            background-color: beige;
+            border-top: chocolate solid 3px;
+            border-bottom: solid cornflowerblue 1px;
+            /* 文字高度设置为行高，可以实现居中 */
+            line-height: 41px;
+        }
+
+        .nav a {
+            /* 要把 a 设置为 行位块元素，a本身是行内元素不能设置高度 */
+            display: inline-block;
+            height: 41px;
+            /* 不设置a 的宽度，而是设置padding ,根据a的内容大小自动缩放宽度 */
+            /* 无论有多少字，边距都一样 */
+            padding: 0px 10px;
+            font-size: 14px;
+            color: rgb(47, 70, 5);
+            text-decoration: none;
+        }
+
+        .nav a:hover {
+            /* 文字颜色和背景  颜色 */
+            color: darkkhaki;
+            background-color: darkslateblue;
         }
     </style>
 </head>
 
 <body>
-    <div>
+    <div class="div1">
+        <p>123456789</p>
+        <p>123456789</p>
+        <p>123456789</p>
+        <p>123456789</p>
+    </div>
 
+    <div class="div2">
+    </div>
+
+    <div class="nav">
+        <!-- p标签是块级元素，独占一行 ， -->
+        <!-- <p>新浪微博</p>
+        <p>新浪微博</p>
+        <p>新浪</p> -->
+
+        <a href="#">新浪微博</a>
+        <a href="#">新浪微</a>
+        <a href="#">新浪</a>
     </div>
 
 </body>
